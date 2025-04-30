@@ -74,11 +74,10 @@ const HeroSection = () => {
         <div className="md:w-1/2 flex justify-center md:justify-end animate-fade-in animate-delay-300">
           <div className="relative">
             <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-xl overflow-hidden border-4 border-portfolio-navy">
-              <img
-                src="/lovable-uploads/323dc842-433a-47dc-9a17-d8a95cae7f05.png"
-                alt="Lawal Toheeb"
-                className="w-full h-full object-cover"
-              />
+              {/* Image placeholder - ready for your personal image upload */}
+              <div className="w-full h-full bg-portfolio-navy flex items-center justify-center">
+                <p className="text-muted-foreground text-center p-4">Upload your personal image here</p>
+              </div>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-primary px-4 py-2 rounded-lg shadow-lg">
               <span className="font-medium">Full Stack Developer</span>
