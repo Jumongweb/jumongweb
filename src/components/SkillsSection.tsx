@@ -39,7 +39,7 @@ const skillsData: SkillCategory[] = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-12">
       <div className="section-container">
         <h2 className="section-title">Skills & Expertise</h2>
         <p className="text-muted-foreground max-w-2xl mt-4">
@@ -47,7 +47,7 @@ const SkillsSection = () => {
           enabling me to build complete, efficient systems.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {skillsData.map((category, idx) => (
             <div 
               key={category.title}

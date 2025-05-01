@@ -35,11 +35,11 @@ const experienceData: ExperienceItem[] = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="bg-portfolio-navy/30 py-24">
+    <section id="experience" className="bg-portfolio-navy/30 py-12">
       <div className="section-container">
         <h2 className="section-title">Experience</h2>
         
-        <div className="mt-12 space-y-12">
+        <div className="mt-8 space-y-8">
           {experienceData.map((experience, index) => (
             <div 
               key={index} 

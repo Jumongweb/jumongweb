@@ -26,11 +26,11 @@ const educationData = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-portfolio-navy/30 py-24">
+    <section id="about" className="bg-portfolio-navy/30 py-12">
       <div className="section-container">
         <h2 className="section-title">About Me</h2>
         
-        <div className="grid md:grid-cols-2 gap-10 mt-12">
+        <div className="grid md:grid-cols-2 gap-10 mt-8">
           <div className="animate-fade-in">
             <p className="text-lg leading-relaxed">
               Skilled software engineer with proven expertise in building scalable applications across the full stack. 
@@ -50,7 +50,7 @@ const AboutSection = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-6 font-heading">Education</h3>
+            <h3 className="text-xl font-semibold mb-4 font-heading">Education</h3>
             <div className="space-y-6">
               {educationData.map((item, index) => (
                 <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>

@@ -20,7 +20,7 @@ const projectsData: Project[] = [
     description: "A comprehensive employee management system with API design and authentication focus.",
     technologies: ["Java", "Spring Boot", "React", "PostgreSQL"],
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format",
-    github: "https://github.com/Junongweb",
+    github: "https://github.com/Jumongweb",
     featured: true
   },
   {
@@ -28,7 +28,7 @@ const projectsData: Project[] = [
     description: "Capstone project focused on connecting clients with specialists using Java/Spring Boot/PostgreSQL.",
     technologies: ["Java", "Spring Boot", "PostgreSQL", "React"],
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format",
-    github: "https://github.com/Junongweb",
+    github: "https://github.com/Jumongweb",
     featured: true
   },
   {
@@ -36,20 +36,20 @@ const projectsData: Project[] = [
     description: "Docker implementation with horizontal scaling capabilities for cloud deployment.",
     technologies: ["Docker", "Terraform", "AWS", "GitHub Actions"],
     image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&auto=format",
-    github: "https://github.com/Junongweb"
+    github: "https://github.com/Jumongweb"
   }
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-12">
       <div className="section-container">
         <h2 className="section-title">Featured Projects</h2>
         <p className="text-muted-foreground max-w-2xl mt-4">
           Explore some of the projects I've worked on, showcasing my technical skills and problem-solving approach.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {projectsData.map((project, index) => (
             <Card 
               key={index} 
