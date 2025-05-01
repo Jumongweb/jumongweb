@@ -132,7 +132,7 @@ const ContactSection = () => {
               <h3 className="text-lg font-medium mb-4">Connect on social media</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://github.com/Junongweb" 
+                  href="https://github.com/Jumongweb" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-portfolio-navy flex items-center justify-center hover:bg-primary transition-colors"

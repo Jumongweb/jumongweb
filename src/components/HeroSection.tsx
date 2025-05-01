@@ -53,7 +53,7 @@ const HeroSection = () => {
           
           <div className="mt-10 flex space-x-4">
             <a 
-              href="https://github.com/Junongweb" 
+              href="https://github.com/Jumongweb" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
