@@ -13,20 +13,20 @@ const techIcons = [
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative">
+    <section id="home" className="min-h-screen flex items-center pt-16 relative">
       <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#3563E9_0%,transparent_25%)] opacity-20" />
       
-      <div className="section-container flex flex-col items-center text-center">
-        <div className="mb-10 animate-fade-in">
+      <div className="section-container flex flex-col md:flex-row items-center">
+        <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight">
             Lawal Toheeb <span className="text-accent">Olabanji</span>
             <span className="block mt-2">Software Engineer</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mt-6 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mt-6 max-w-lg">
             Building scalable applications across the full stack
           </p>
           
-          <div className="flex flex-wrap gap-3 mt-8 justify-center">
+          <div className="flex flex-wrap gap-3 mt-8">
             {techIcons.map((tech, index) => (
               <div 
                 key={tech.name}
@@ -51,7 +51,7 @@ const HeroSection = () => {
             </Button>
           </div>
           
-          <div className="mt-10 flex space-x-4 justify-center">
+          <div className="mt-10 flex space-x-4">
             <a 
               href="https://github.com/Junongweb" 
               target="_blank" 
@@ -71,7 +71,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-center animate-fade-in animate-delay-300">
+        <div className="md:w-1/2 flex justify-center md:justify-end animate-fade-in animate-delay-300">
           <div className="relative">
             <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-xl overflow-hidden border-4 border-portfolio-navy">
               <img 
