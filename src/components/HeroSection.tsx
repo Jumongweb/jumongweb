@@ -39,14 +39,14 @@ const HeroSection = () => {
             ))}
           </div>
           
-          <div className="mt-10 space-x-4">
-            <Button asChild size="lg" className="group">
+          <div className="mt-10 flex flex-row gap-4 flex-wrap sm:flex-nowrap">
+            <Button asChild size="default" className="group min-w-36">
               <a href="#projects">
                 View My Work
                 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="outline" size="default" asChild className="min-w-36">
               <a href="#contact">Contact Me</a>
             </Button>
           </div>
