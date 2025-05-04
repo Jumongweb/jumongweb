@@ -33,7 +33,7 @@ const projectsData: Project[] = [
   },
   {
     title: "Spark",
-    description: "An AI-powered application that integrates Gemini AI with both frontend and backend components.",
+    description: "Spark is an intelligent chat application powered by Google's Gemini AI, designed to provide insightful responses with citation support.",
     technologies: ["React", "Spring Boot", "Java", "API Integration"],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&auto=format",
     github: "https://github.com/Jumongweb/Spark",
