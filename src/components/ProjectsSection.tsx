@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,14 @@ interface Project {
 }
 
 const projectsData: Project[] = [
+  {
+    title: "Meedl",
+    description: "A comprehensive fintech platform providing innovative financial solutions and services for modern banking needs.",
+    technologies: ["Java", "Spring Boot", "PostgreSQL", "Microservices"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format",
+    demo: "https://meedl.africa",
+    featured: true
+  },
   {
     title: "Employee Management Application",
     description: "A comprehensive employee management system with API design and authentication focus.",
