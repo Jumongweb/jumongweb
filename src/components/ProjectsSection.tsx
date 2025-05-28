@@ -1,8 +1,8 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from 'lucide-react';
+import { cn } from "@/lib/utils";
 
 interface Project {
   title: string;
