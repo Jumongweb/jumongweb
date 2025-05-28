@@ -96,12 +96,39 @@ export default {
 						transform: "translateX(0)"
 					}
 				},
+				"float": {
+					"0%, 100%": {
+						transform: "translateY(0px)"
+					},
+					"50%": {
+						transform: "translateY(-10px)"
+					}
+				},
+				"glow": {
+					"0%, 100%": {
+						boxShadow: "0 0 5px rgba(53, 99, 233, 0.5)"
+					},
+					"50%": {
+						boxShadow: "0 0 20px rgba(53, 99, 233, 0.8)"
+					}
+				},
+				"shimmer": {
+					"0%": {
+						backgroundPosition: "-200% 0"
+					},
+					"100%": {
+						backgroundPosition: "200% 0"
+					}
+				}
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 				"fade-in": "fade-in 0.6s ease-out forwards",
 				"slide-in": "slide-in 0.6s ease-out forwards",
+				"float": "float 3s ease-in-out infinite",
+				"glow": "glow 2s ease-in-out infinite",
+				"shimmer": "shimmer 2s linear infinite",
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
