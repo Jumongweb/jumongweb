@@ -10,6 +10,17 @@ interface ExperienceItem {
 
 const experienceData: ExperienceItem[] = [
   {
+    role: "Backend Engineer",
+    company: "Meedl",
+    period: "2024 - Present",
+    responsibilities: [
+      "Developing robust backend systems for fintech solutions",
+      "Building secure APIs for financial transactions",
+      "Implementing scalable microservices architecture",
+      "Collaborating with cross-functional teams on product development"
+    ]
+  },
+  {
     role: "Software Engineering Intern",
     company: "Semicolon Labs",
     period: "2024",
