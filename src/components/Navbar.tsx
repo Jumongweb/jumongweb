@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavItem {
   name: string;
@@ -75,28 +75,33 @@ const Navbar = () => {
           
           {/* Mobile menu button */}
           <button 
-            className="md:hidden p-2 rounded-md text-muted-foreground hover:text-foreground" 
+            className="md:hidden p-2 rounded-md text-muted-foreground hover:text-foreground transition-all duration-300" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <Menu size={24} />
+            {mobileMenuOpen ? (
+              <X size={24} className="animate-fade-in" />
+            ) : (
+              <Menu size={24} className="animate-fade-in" />
+            )}
           </button>
         </div>
         
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
+          <nav className="md:hidden mt-4 py-6 border-t border-border bg-portfolio-dark/98 backdrop-blur-md rounded-lg shadow-lg animate-slide-in">
+            <div className="flex flex-col space-y-4 px-4">
+              {navItems.map((item, index) => (
                 <a 
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground"
+                  className="text-base font-medium text-foreground hover:text-accent transition-colors py-2 px-3 rounded-md hover:bg-portfolio-navy/50 animate-fade-in"
+                  style={{ animationDelay: `${index * 100}ms` }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button asChild className="w-full mt-2">
+              <Button asChild className="w-full mt-4 animate-fade-in" style={{ animationDelay: `${navItems.length * 100}ms` }}>
                 <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Let's Connect</a>
               </Button>
             </div>

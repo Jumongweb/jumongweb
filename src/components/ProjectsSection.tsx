@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from 'lucide-react';
@@ -49,8 +49,35 @@ const projectsData: Project[] = [
 ];
 
 const ProjectsSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id="projects" className="py-12">
+    <section ref={sectionRef} id="projects" className="py-12">
       <div className="section-container">
         <h2 className="section-title">Featured Projects</h2>
         <p className="text-muted-foreground max-w-2xl mt-4">
@@ -61,8 +88,16 @@ const ProjectsSection = () => {
           {projectsData.map((project, index) => (
             <Card 
               key={index} 
-              className="project-card border-border overflow-hidden animate-fade-in"
-              style={{ animationDelay: `${index * 200}ms` }}
+              className={cn(
+                "project-card border-border overflow-hidden transition-all duration-700 transform",
+                isVisible 
+                  ? "animate-slide-in opacity-100 translate-y-0" 
+                  : "opacity-0 translate-y-8"
+              )}
+              style={{ 
+                animationDelay: isVisible ? `${index * 200}ms` : '0ms',
+                transitionDelay: isVisible ? `${index * 200}ms` : '0ms'
+              }}
             >
               <div className="h-48 overflow-hidden">
                 <img 
