@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send, Twitter } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { useToast } from "@/hooks/use-toast";
 import { useForm } from "react-hook-form";
@@ -146,6 +146,14 @@ const ContactSection = () => {
                   className="w-10 h-10 rounded-full bg-portfolio-navy flex items-center justify-center hover:bg-primary transition-colors"
                 >
                   <Linkedin size={18} />
+                </a>
+                <a 
+                  href="https://x.com/LToheeb77062" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-portfolio-navy flex items-center justify-center hover:bg-primary transition-colors"
+                >
+                  <Twitter size={18} />
                 </a>
               </div>
             </div>
