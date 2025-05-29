@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin } from 'lucide-react';
+import TypingAnimation from './TypingAnimation';
 
 const techIcons = [
   { name: 'Java', icon: '☕' },
@@ -20,7 +20,12 @@ const HeroSection = () => {
         <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight">
             Lawal Toheeb <span className="text-accent">Olabanji</span>
-            <span className="block mt-2">Software Engineer</span>
+            <span className="block mt-2">
+              <TypingAnimation 
+                text="I am a Software Engineer" 
+                className="text-foreground"
+              />
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mt-6 max-w-lg animate-fade-in animate-delay-200">
             Building scalable applications across the full stack

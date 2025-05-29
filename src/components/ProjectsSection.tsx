@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -39,6 +37,7 @@ const projectsData: Project[] = [
     technologies: ["Java", "Spring Boot", "PostgreSQL", "React"],
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format",
     github: "https://github.com/Jumongweb",
+    demo: "https://quagga-inky.vercel.app/",
     featured: true
   },
   {
