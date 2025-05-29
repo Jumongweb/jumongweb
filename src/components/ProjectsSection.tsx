@@ -28,7 +28,7 @@ const projectsData: Project[] = [
     description: "A comprehensive employee management system with API design and authentication focus.",
     technologies: ["Java", "Spring Boot", "React", "PostgreSQL"],
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format",
-    github: "https://github.com/Jumongweb",
+    github: "https://github.com/Jumongweb/employeeManagementSystem",
     featured: true
   },
   {
@@ -38,6 +38,14 @@ const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format",
     github: "https://github.com/Jumongweb",
     demo: "https://quagga-inky.vercel.app/",
+    featured: true
+  },
+  {
+    title: "Fitness Microservice",
+    description: "A backend microservice application designed for fitness tracking and management with scalable architecture.",
+    technologies: ["Java", "Spring Boot", "Microservices", "REST API"],
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format",
+    github: "https://github.com/Jumongweb/fitness_microservice",
     featured: true
   },
   {
