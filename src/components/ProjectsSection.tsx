@@ -36,7 +36,6 @@ const projectsData: Project[] = [
     description: "Capstone project focused on connecting clients with specialists using Java/Spring Boot/PostgreSQL.",
     technologies: ["Java", "Spring Boot", "PostgreSQL", "React"],
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format",
-    github: "https://github.com/Jumongweb",
     demo: "https://quagga-inky.vercel.app/",
     featured: true
   },
@@ -55,13 +54,6 @@ const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&auto=format",
     github: "https://github.com/Jumongweb/Spark",
     featured: true
-  },
-  {
-    title: "Containerized Application Deployment",
-    description: "Docker implementation with horizontal scaling capabilities for cloud deployment.",
-    technologies: ["Docker", "Terraform", "AWS", "GitHub Actions"],
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&auto=format",
-    github: "https://github.com/Jumongweb"
   }
 ];
 
