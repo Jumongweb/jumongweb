@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Download } from 'lucide-react';
 import TypingAnimation from './TypingAnimation';
 
 const techIcons = [
@@ -53,6 +54,16 @@ const HeroSection = () => {
             </Button>
             <Button variant="outline" size="default" asChild className="min-w-36 hover:scale-105 transition-transform duration-300">
               <a href="#contact">Contact Me</a>
+            </Button>
+            <Button variant="secondary" size="default" asChild className="min-w-36 hover:scale-105 transition-transform duration-300">
+              <a 
+                href="https://drive.google.com/file/d/1USUfSKh-OcgR-L4HNbLBva3YxFpkPi-I/view?usp=drive_link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Download size={16} className="mr-2" />
+                Download CV
+              </a>
             </Button>
           </div>
           
