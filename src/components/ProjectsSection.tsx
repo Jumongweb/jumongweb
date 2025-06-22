@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,15 @@ interface Project {
 }
 
 const projectsData: Project[] = [
+  {
+    title: "Pagaclone",
+    description: "A clone of Paga's financial services platform, replicating the payments ecosystem that helps consumers and sellers pay, get paid, and access financial services across Africa.",
+    technologies: ["React", "JavaScript", "CSS", "HTML"],
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&auto=format",
+    github: "https://github.com/Jumongweb/pageClone",
+    demo: "https://pagaclonebyjumong.netlify.app/",
+    featured: true
+  },
   {
     title: "Meedl",
     description: "A fintech platform addressing financial barriers by providing inclusive financing solutions to help people acquire skills and achieve their goals. Connecting learners, organizations, and donors to fuel Africa's potential.",
