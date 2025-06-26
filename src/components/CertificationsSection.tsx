@@ -18,7 +18,7 @@ const certificationsData: Certification[] = [
   {
     title: "Certificate of Appreciation",
     issuer: "Professional Recognition",
-    date: "2024",
+    date: "2025",
     description: "Recognition for outstanding contributions and professional excellence in software development.",
     link: "https://drive.google.com/file/d/1CuGUoJUvzelOI5N42vgkr4CD4ORh-wA0/view?usp=sharing",
     type: "appreciation"
