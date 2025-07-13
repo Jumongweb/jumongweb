@@ -18,7 +18,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: "Wiiibi Energy Solar System",
-    description: "Wiibi Energy is a full‑service solar‑technology company headquartered at 1 Olaoluwa Street, Off Adebowale Road, Ojodu, Lagos. From rooftop panels to whole‑home backup, we design, install, and maintain turn-key energy systems that keep you powered 24/7. No generators, just pure sunshine and smart engineering.",
+    description: "Wiibi Energy is a full-service solar-technology company specializing in innovative energy solutions. From rooftop panels to whole-home backup, they design, install, and maintain turn-key energy systems that keep you powered 24/7. No generators, just pure sunshine and smart engineering.",
     technologies: ["React", "JavaScript", "CSS", "HTML"],
     image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=500&auto=format",
     demo: "https://wiibi-energy.netlify.app/",
