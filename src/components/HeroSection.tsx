@@ -57,7 +57,7 @@ const HeroSection = () => {
             </Button>
             <Button variant="secondary" size="default" asChild className="min-w-36 hover:scale-105 transition-transform duration-300">
               <a 
-                href="https://drive.google.com/file/d/1USUfSKh-OcgR-L4HNbLBva3YxFpkPi-I/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1OunZ7WmiXiFa7AKkFrr96sCHPNhmn86D/view?usp=sharing"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
