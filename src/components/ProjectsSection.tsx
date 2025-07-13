@@ -17,12 +17,11 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: "Pagaclone",
-    description: "A clone of Paga's financial services platform, replicating the payments ecosystem that helps consumers and sellers pay, get paid, and access financial services across Africa.",
+    title: "Wiiibi Energy Solar System",
+    description: "Wiibi Energy is a full‑service solar‑technology company headquartered at 1 Olaoluwa Street, Off Adebowale Road, Ojodu, Lagos. From rooftop panels to whole‑home backup, we design, install, and maintain turn-key energy systems that keep you powered 24/7. No generators, just pure sunshine and smart engineering.",
     technologies: ["React", "JavaScript", "CSS", "HTML"],
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&auto=format",
-    github: "https://github.com/Jumongweb/pageClone",
-    demo: "https://pagaclonebyjumong.netlify.app/",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=500&auto=format",
+    demo: "https://wiibi-energy.netlify.app/",
     featured: true
   },
   {
@@ -63,6 +62,15 @@ const projectsData: Project[] = [
     technologies: ["React", "Spring Boot", "Java", "API Integration"],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&auto=format",
     github: "https://github.com/Jumongweb/Spark",
+    featured: true
+  },
+  {
+    title: "Pagaclone",
+    description: "A clone of Paga's financial services platform, replicating the payments ecosystem that helps consumers and sellers pay, get paid, and access financial services across Africa.",
+    technologies: ["React", "JavaScript", "CSS", "HTML"],
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&auto=format",
+    github: "https://github.com/Jumongweb/pageClone",
+    demo: "https://pagaclonebyjumong.netlify.app/",
     featured: true
   }
 ];

@@ -21,6 +21,17 @@ const experienceData: ExperienceItem[] = [
     ]
   },
   {
+    role: "Backend Engineer",
+    company: "Enum",
+    period: "2024",
+    responsibilities: [
+      "Engineered scalable backend infrastructure for a recruitment platform used by employers to identify ideal candidates",
+      "Developed RESTful APIs for job matching, applicant tracking, and workflow automation",
+      "Integrated third-party HR tools (e.g., messaging, resume parsers) into the hiring platform",
+      "Contributed to architecture design focused on modularity and long-term scalability"
+    ]
+  },
+  {
     role: "Software Engineering Intern",
     company: "Semicolon Labs",
     period: "2024",
