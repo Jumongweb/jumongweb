@@ -22,6 +22,22 @@ const certificationsData: Certification[] = [
     description: "Recognition for outstanding contributions and professional excellence in software development.",
     link: "https://drive.google.com/file/d/1CuGUoJUvzelOI5N42vgkr4CD4ORh-wA0/view?usp=sharing",
     type: "appreciation"
+  },
+  {
+    title: "MERN Stack Certification",
+    issuer: "Google",
+    date: "2025",
+    description: "Comprehensive certification in MongoDB, Express.js, React, and Node.js full-stack development.",
+    link: "https://drive.google.com/file/d/1__j1UEVnCtMLDDCpCYpagOTpYmWwseL1/view?usp=sharing",
+    type: "completion"
+  },
+  {
+    title: "MERN Stack Certification",
+    issuer: "Microsoft",
+    date: "2025",
+    description: "Advanced MERN stack development certification covering modern full-stack JavaScript technologies.",
+    link: "https://drive.google.com/file/d/1rn2em0yx9dHBX5g5sZ80XokYRlm09IN6/view?usp=sharing",
+    type: "completion"
   }
 ];
 
